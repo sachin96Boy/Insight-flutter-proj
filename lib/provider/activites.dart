@@ -15,13 +15,13 @@ class Activities {
 
 
   const Activities({
-    @required this.id,
-    @required this.title,
-    @required this.description,
-    @required this.startDate,
-    @required this.endDate,
-    @required this.author,
-    @required this.status,
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.startDate,
+    required this.endDate,
+    required this.author,
+    required this.status,
     
   });
 

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myinstallerapp/screens/activity_details_screen.dart';
+import 'package:myinstallerapp/screens/addActivityScreen.dart';
 
 
 import '../screens/overviewScreen.dart';
@@ -26,6 +28,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: OverviewScreen(),
+      routes: {
+        ActivityDetailsScreen.routeName: (context)=> ActivityDetailsScreen(),
+        AddActivityScreen.routeName: (context)=> AddActivityScreen(), 
+      },
     );
   }
 }

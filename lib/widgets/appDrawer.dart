@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myinstallerapp/screens/addActivityScreen.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({ Key? key }) : super(key: key);
@@ -19,6 +20,11 @@ class AppDrawer extends StatelessWidget {
             // onTap: ,
           ),
           Divider(),
+          ListTile(
+            leading: Icon(Icons.local_activity),
+            title: const Text('Add Activity'),
+            onTap:()=> Navigator.of(context).pushReplacementNamed(AddActivityScreen.routeName),
+          )
         ],
       ),
     );
